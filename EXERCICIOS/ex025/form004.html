@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXERCÍCIO</title>
+  </head>
+  <body>
+    <h1>Informações Pessoais</h1>
+
+    <form action="cadastro.php" method="get">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <p>
+          <label for="inome">Nome </label
+          ><input
+            type="text"
+            name="nome"
+            id="inome"
+            required
+            maxlength="15"
+            minlength="4"
+            placeholder="Nome Completo"
+          />
+        </p>
+        <p>
+          <label for="inasc">Data de Nascimento </label
+          ><input type="date" name="Data" id="inasc" required />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Endereço</legend>
+        <p>
+          <label for="irua">Rua </label
+          ><input type="text" name="rua" id="irua" required />
+        </p>
+        <p>
+          <label for="in">Número </label
+          ><input
+            type="number"
+            name="n"
+            id="in"
+            min="0"
+            maxlength="6"
+            size="3"
+          />
+        </p>
+        <p>
+          <label for="icid">Cidade </label
+          ><input type="text" name="cid" id="icid" required />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Contato</legend>
+        <label for="itel">Tel </label
+        ><input
+          type="tel"
+          name="tel"
+          id="itel"
+          required
+          placeholder="(xx)xxxx-xxxx"
+        />
+        <p>
+          <label for="iemail">Email </label
+          ><input type="email" name="email" id="iemail" required />
+        </p>
+      </fieldset>
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+  </body>
+</html>
