@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post">
+      <fieldset>
+        <legend>Faça sua avaliação</legend>
+
+        <!--COR------------------------->
+        <p>
+          <label for="icor">Escolha sua cor: </label>
+          <input type="color" name="cor" id="icor" />
+        </p>
+
+        <!--Satisfação-->
+        <p>
+          <label for="isat">Nível de Satisfação</label>
+          <input type="range" name="nivel" id="isat" />
+        </p>
+
+        <!--FOTO-------------------------->
+        <label for="ifot">Envie sua foto</label>
+        <input type="file" name="foto" id="ifot" />
+      </fieldset>
+
+      <!--BOTÕES------------------------------>
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Limpar" />
+    </form>
+  </body>
+</html>
