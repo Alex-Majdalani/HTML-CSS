@@ -10,14 +10,16 @@
   box-sizing: border-box;
 }
 
-html {
-  height: 100vh;
+body {
+  background: black url("../imagens/back-phone.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
-body {
-  background: black url("../imagens/back-phone.jpg") no-repeat;
+html {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
 }
 
 main {
